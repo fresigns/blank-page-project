@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/assets/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+</head>
+<body class="light">
+        <div class="left" id="counter-div">
+
+        </div>
+        <div class="center">
+            <textarea class="light" id="textarea" cols="100" rows="50" placeholder="scrivi qualcosa..." >
+            </textarea>
+            <div id="preview"></div>
+        </div>
+
+        <div class="right">
+            <button onclick="switchThemes()">
+                Cambia il tema
+            </button>
+            <button id="download-btn">
+                Scarica il testo in formato .txt
+            </button>
+            <button id="fullscreen-btn">
+                Schermo intero
+            </button>
+            <button id="markdown-btn">
+                Markdown ON-OFF
+            </button>
+        </div>
+</body>
+<script src="./main.js"></script>
+</html>

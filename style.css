@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "left center right";
+    box-sizing: border-box;
+}
+
+#textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    font-size: xx-large;
+    /* padding: 60px; */
+}
+
+.left {
+    grid-area: left;
+}
+
+.center {
+    grid-area: center;
+}
+
+.right {
+    grid-area: right;
+    justify-self: right;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 4px;
+}
+
+.light {
+    background-color: white;
+    color: #313131;
+}
+
+.dark {
+    background-color: #313131;
+    color: white;
+}
+
+/* CTRL + K + F indentazione*/
